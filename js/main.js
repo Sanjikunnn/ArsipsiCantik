@@ -31,7 +31,6 @@ $( document ).ready(function() {
     getData();
 });
 
-/* Durstenfeld shuffle algorithm, an optimized version of Fisher-Yates.*/
 function shuffleArray(array) {
     for (var i = array.length - 1; i > 0; i--) {
         var j = Math.floor(Math.random() * (i + 1));
@@ -94,9 +93,9 @@ function getData() {
             object.reverse = false;
             
             if (object.gender == "Male") { 
-                object.pic = 'textures/m' + (Math.floor(Math.random() * 7) + 1) + '.jpg';
+                object.pic = 'textures/m' + (Math.floor(Math.random() * 26) + 1) + '.jpg';
             } else if (object.gender == "Female") { 
-                object.pic = 'textures/f' + (Math.floor(Math.random() * 7) + 1) + '.jpg';
+                object.pic = 'textures/f' + (Math.floor(Math.random() * 26) + 1) + '.jpg';
             } 
             
             data.push(object);
